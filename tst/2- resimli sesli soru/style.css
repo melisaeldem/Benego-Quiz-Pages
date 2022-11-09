@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CLOCK START */
+  #clock {
+    display: none;
+    font-size: 18px;
+    margin: 0;
+    font-family: sans-serif;
+    padding: 7px 28px;
+    border-radius: 12px;
+    border: 1px solid #001077;
+    position: relative;
+    top: 4px;
+  }
+  /* CLOCK FINISH */
+
+  /* AUDIO START */
+      .audio{
+        /* display: none; */
+        position: relative;
+        top: -70px;
+    }
+  /* AUDIO FINISH */
+
+  /* NAVBAR START */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 45px;
+  }
+  /* NAVBAR FINISH */
+  
+  /* HR-1 START */
+  .hr-1 {
+    width: 75%;
+    margin: 0 auto;
+    height: 9px;
+    background-color: #001077;
+    border-radius: 20px;
+    position: relative;
+    bottom: 20px;
+  }
+  /* HR-1 FINISH */
+  .container p{
+    font-size: 20px;
+  }
+/* MAIN PLAYER START */
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 60px;
+    position: relative;
+    top: 50px;
+  }
+  
+  .audio{
+    position: relative;
+    bottom: 200px;
+    left: 100px;
+    z-index: 1;
+  }
+  .player-question{
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .player-question .text{
+    margin-top: 20px;
+  }
+  .player-question .audio{
+    margin-bottom: 30px;
+    border: 2px solid #001077;
+    border-radius: 50px;
+  }
+  .player-question p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .player-question .text h3{
+    color: #001077;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* MAIN PLAYER FINISH */
+
+  /* BUTTONS IMAGES START */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 40px;
+  }
+  .container .img {
+    max-width: 100%;
+    width: 300px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+  
+  label {
+      display: block;
+      padding: 10px 60px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 400;
+      min-width: 250px;
+      white-space: nowrap;
+      position: relative;
+      margin-top: 20px;
+  }
+  label input {
+    display: none;
+  }
+  label span {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #001077;
+    border: 2px solid #001077;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    border-radius: 100%;
+    padding: 1px;
+    font-size: 15px;
+    left: 0;
+    top: 50%;
+    margin-top: -7.5px;
+  }
+  
+  input:checked + span {
+    background: #001077;
+    border-color: #001077;
+    color: white;
+  }
+  .radio-btn{
+    margin-top: 50px;
+    width: 150px;
+    height: 160px;
+    position: relative;
+    bottom: 80px;
+    }
+    .text-buttons{
+        position: relative;
+        bottom: 50px;
+    }
+    .radio-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .one{
+        max-width: 100%;
+        margin-right: 10px;
+    }
+    .two{
+        max-width: 100%;
+        margin-left: 10px;
+        margin-bottom: 14px;
+    }
+  .two{
+    margin-top: 13px;
+  }
+  /* BUTTONS IMAGES FINISH */
+
+    
+  /* RESPONSIVE PHONE START*/
+  @media screen and (max-width: 1180px) {
+    .main .img img{
+      max-width: 100%;
+    }
+    .container{
+        margin-top: 20px;
+    }
+    .container p{
+      position: relative;
+      margin-top: 10px;
+      bottom: 40px;
+    }
+    .audio{
+      margin-top: 10px;
+      position: relative;
+      top: 20px;
+      left: 120px;
+    }
+    .text h3{
+      position: relative;
+      bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 990px){
+.container{
+  margin-top: 50px;
+}
+.container p{
+  position: relative;
+  bottom: 80px;
+}
+.text h3{
+  position: relative;
+  bottom: 70px;
+}
+
+  }
+  @media screen and (max-width: 627px){
+    .container p{
+      font-size: 16px;
+      text-align: center;
+    }
+    .radio-list{
+      display: flex;
+      flex-direction: column;
+    }
+    .audio{
+      position: relative;
+      left: 0;
+      right: 0px;
+    }
+    .two{
+      position: relative;
+      right:10px;
+      bottom: 7px;
+    }
+  }
+  /* RESPONSIVE PHONE FINISH*/

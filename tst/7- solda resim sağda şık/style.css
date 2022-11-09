@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CLOCK START */
+#clock {
+  display: none;
+  font-size: 18px;
+  margin: 0;
+  font-family: sans-serif;
+  padding: 7px 28px;
+  border-radius: 12px;
+  border: 1px solid #001077;
+  position: relative;
+  top: 4px;
+}
+/* CLOCK FINISH */
+
+/* NAVBAR START */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 45px;
+}
+/* NAVBAR FINISH */
+
+/* HR-1 START */
+.hr-1 {
+  width: 96%;
+  margin: 0 auto;
+  height: 9px;
+  background-color: #001077;
+  border-radius: 20px;
+  position: relative;
+  bottom: 40px;
+}
+/* HR-1 FINISH */
+
+/* BUTTONS IMAGES START */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  top: 40px;
+}
+.container .img {
+  border: 2px solid #001077;
+  max-width: 100%;
+  width: 400px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  position: relative;
+}
+
+label {
+    display: block;
+    padding: 10px 60px;
+    border: 2px solid #001077;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 250px;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+}
+label input {
+  display: none;
+}
+label span {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #001077;
+  border: 2px solid #001077;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+  border-radius: 100%;
+  padding: 1px;
+  font-size: 15px;
+  left: 0;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+input:checked + span {
+  background: #001077;
+  border-color: #001077;
+  color: white;
+}
+.radio-btn{
+  margin-top: 50px;
+  width: 150px;
+  height: 160px;
+  position: relative;
+  bottom: 80px;
+  }
+  .text-buttons{
+      position: relative;
+      bottom: 50px;
+  }
+  .radio-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 50px;
+  }
+
+/* BUTTONS IMAGES FINISH */
+
+
+/* RESPONSIVE TABLET START*/
+@media screen and (max-width: 650px) {
+  .container{
+      position: relative;
+      top: 30px;
+  }
+  .container .img{
+      position: relative;
+  }
+  .container .img img{
+      width: 350px;
+      position: relative;
+      left: 25px;
+  }
+  .radio-btn{
+      margin-top: 50px;
+      width: 150px;
+      height: 160px;
+      position: relative;
+      bottom: 80px;
+      }
+      .text-buttons{
+          position: relative;
+          bottom: 50px;
+      }
+      .radio-list{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+      }
+      .one{
+          max-width: 100%;
+          margin-right: 10px;
+      }
+      .two{
+          max-width: 100%;
+          margin-left: 10px;
+      }
+}
+/* RESPONSIVE TABLET FINISH */
+
+/* RESPONSIVE PHONE START */
+@media screen and (max-width: 547px) { 
+  .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .navbar .logo{
+    position: relative;
+    top: 7px;
+  }
+  .radio-btn{
+  width: 120px;
+  height: 150px;
+  position: relative;
+  }
+  .main-container h2{
+  font-size: 25px;
+  margin-top: 40px;
+  }
+  .container .img img{
+      width: 320px;
+      position: relative;
+      left: 25px;
+  }
+  .radio-list{
+      position: relative;
+      bottom: 10px;
+      display: flex;
+  }
+  .radio-item label{
+      min-width: 100px;
+  }
+  .one{
+      max-width: 100%;
+  }
+} 
+@media screen and (max-width: 416px) {
+  .container .img img{
+      border: none;
+      width: 300px;
+      position: relative;
+      left: 25px;
+  }
+}
+/* RESPONSIVE PHONE FINISH*/

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CLOCK START */
+#clock {
+  display: none;
+  font-size: 18px;
+  margin: 0;
+  font-family: sans-serif;
+  padding: 7px 12px;
+  border-radius: 12px;
+  border: 1px solid #001077;
+  position: relative;
+  top: 4px;
+  width: 100px;
+}
+/* CLOCK FINISH */
+
+/* HR-1 START */
+.hr-1 {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 6px;
+  background-color: #001077;
+  border-radius: 20px;
+  position: relative;
+    bottom: 40px;
+}
+
+/* HR-1 FINISH */
+.text-buttons{
+  position: relative;
+  top: 40px;
+}
+label {
+  display: block;
+  padding: 8px 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  min-width: 9vh;
+  white-space: nowrap;
+  position: relative;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #001077;
+  border: 2px solid #001077;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+  border-radius: 100%;
+  padding: 1px;
+  font-size: 15px;
+  left: 0;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+input:checked+span {
+  background: #001077;
+  border-color: #001077;
+  color: white;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+.radio-item img {
+  width: 100%;
+  height: auto;
+}
+.soru{
+text-align: end;
+margin-right: 100px;
+}
+
+@media screen and (max-width : 1024px) {
+  .soru{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width : 635px) {
+.soru{
+  font-size: 17px;
+  text-align: center;
+  margin: 0 auto;
+}
+}
+@media screen and (max-width : 414px) {
+.soru{
+font-size: 16px;
+text-align: center;
+margin: 0 auto;
+}
+}
